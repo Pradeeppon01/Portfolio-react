@@ -1,0 +1,20 @@
+.hireMeContainer{
+  text-align:center;
+}
+.hireMeText1{
+  font-size:3rem;
+  margin-bottom:0rem;
+}
+.cvButton{
+  color:white;
+  background-color:black;
+  padding:.4rem 1.5rem;
+  border:none;
+  border-radius:1rem;
+  font-size:1.5rem;
+  cursor:pointer;
+  transition:.2s ease;
+}
+.cvButton:hover{
+  transform:scale(1.1);
+}

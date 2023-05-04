@@ -1,0 +1,220 @@
+.postContainer{
+  margin-left:6rem;
+  padding-left:3rem;
+  margin-right:6rem;
+  margin-top:1.5rem;
+  padding-top:1.5rem;
+  width:90%;
+  border-left:1px solid black;
+}
+.mainContainer{
+  margin-top:1rem;
+  display:flex;
+    margin-top:2rem;
+}
+h1{
+  padding-top:0rem;
+}
+.postPara{
+  font-size:1.3rem;
+  width: fit-content;
+}
+.postCardHeading h1{
+  
+  font-size:2.5rem;
+  margin:0;
+}
+.postFirstButton{
+  color:white;
+  background-color:black;
+  padding:.5rem;
+  border:none;
+  cursor:pointer;
+  font-weight:600;
+  transition:.2s ease;
+}
+.postSecondButton{
+  padding:.5rem;
+  border:1px red inset;
+  padding-left:1.1rem;
+  padding-right:1.1rem;
+  cursor:pointer;
+  font-weight:600;
+  transition:.2s ease;
+}
+.postSecondButton:hover{
+  transform:scale(1.1);
+}
+.postTransitionText{
+  width:63%;
+  animation:fade 2s ease-in 1s infinite;
+  //border-right:3px solid black;
+  //white-space:nowrap;
+  //overflow:hidden;
+  //animation:typing 2s steps(15),blink 1s infinite;
+  margin-bottom:1rem;
+}
+.photoPhoto{
+width:65%;
+  padding-left:2rem;
+  border:2px solid black;
+  border-top-left-radius:8rem;
+  border-bottom-right-radius:8rem;
+  box-shadow: 15px 5px 12px 2px #b5abab;
+  -webkit-animation:shake 1.6s ease .1s infinite alternate;
+}
+
+@-webkit-keyframes shake{
+  from{
+    -webkit-transform:rotate(5deg);
+  }
+to{
+  -webkit-transform:rotate(-5deg);
+}
+}
+@media (max-width:420px){
+  .photoPhoto{
+    border-top-left-radius:5rem;
+  border-bottom-right-radius:5rem;
+    margin-top:3rem;
+    margin-bottom:3rem;
+  }
+}
+span{
+  color:red;
+}
+@media (max-width:420px){
+  .mainContainer{
+    flex-direction:column;
+  }
+  .postContainer{
+    margin-left:3rem;
+    width:60%;
+    padding-left:2rem;
+  }
+  .postCardHeading h1{
+    font-size:1.4rem;
+  }
+  .postTransitionText{
+    word-wrap:break-word;
+    width:93%;
+  }
+  .postFirstButton{
+    width:100%;
+  }
+  .postSecondButton{
+    width:100%;
+  }
+  .photoContainer{
+   width:80%; 
+    margin:auto;
+    padding-left:2rem;
+  }
+  .mainContainer{
+    margin:auto;
+  }
+}
+.floatingDiv{
+  visibility:hidden;
+}
+.floatingMail{
+  background:white;
+  width:3rem;
+  height:3rem;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  box-shadow:1px 1px 6px 1px black;
+  border-radius:50%;
+  position:absolute;
+  top:5.5rem;
+  left:1.5rem;
+  transition:2s ease-in-out;
+  animation:big 1s infinite;
+  visibility:hidden;
+}
+@keyframes big{
+  from{
+    transform:scale(1)
+  }
+  to{
+    transform:scale(1.1)
+  }
+}
+
+@media (max-width:420px){
+  .floatingMail{
+    visibility:visible;
+  }
+}
+@media (min-width:420px) and (max-width:1200px){
+  .mainContainer{
+    display:flex;
+    flex-direction:column;
+  }
+  .photoPhoto{
+    width:200px;
+    height:auto;
+    border-top-left-radius:5rem;
+  border-bottom-right-radius:5rem;
+    margin-top:3rem;
+    margin-bottom:2rem;
+  }
+  .postContainer{
+    margin:auto;
+  }
+  .photoContainer{
+    margin:auto;
+  }
+  .postContainer{
+    padding-left:2rem;
+  }
+  .postPara p{
+    white-space:wrap;
+  }
+}
+@media (max-width:600px) and (min-width:420px){
+  .floatingMail{
+    visibility:visible;
+    left:1rem;
+  }
+  .postContainer{
+    margin-left:1rem;
+  }
+}
+@media (max-width:420px) and (min-width:350px){
+  .photoContainer{
+    margin-left:2rem;
+  }
+}
+@media (min-width:1500px){
+  .postContainer .postPara p{
+    font-size:1.2rem;
+  }
+  .postContainer{
+    padding-bottom:2rem;
+  }
+  .postFirstButton{
+    font-size:1.3rem;
+  }
+  .postSecondButton{
+    font-size:1.3rem;
+  }
+}
+.postCardHeading span{
+  overflow:hidden;
+  white-space:nowrap;
+  animation:typingText 1s ease-in-out infinite;
+}
+@keyframes typingText{
+  from{
+    padding-left:0rem;
+  }
+  to{
+    padding-left:none;
+  }
+}
+
+span{
+  color:red;
+}

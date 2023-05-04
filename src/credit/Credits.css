@@ -1,0 +1,13 @@
+.creditsContainer{
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-color:black;
+  margin-top:auto;
+}
+.creditsPara{
+  text-align:center;
+  color:white;
+  background:transparent;
+}

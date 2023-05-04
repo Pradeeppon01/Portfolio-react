@@ -1,0 +1,36 @@
+.footerContainer{
+  background-color:#e3e7df;
+  margin-top:3rem;
+  margin-left:3rem;
+  margin-right:3rem;
+  display:flex;
+  justify-content:center;
+  padding-top:0.5rem; 
+  padding-bottom:0.5rem;
+  border-top:1px solid black;
+}
+
+.footerContainer a{
+  margin:0 1rem;
+}
+
+.linkedinText,.GithubText{
+  color:black;
+  margin-left:1rem;
+  border-bottom:1px solid red;
+  padding-bottom:.5rem;
+  cursor:pointer;
+  transition:.2s ease;
+  animation:zoom 1s infinite;
+}
+@keyframes zoom{
+  0%{
+    transform:scale(0.5)
+  }
+  100%{
+    transform:scale(1.05)
+  }
+}
+a{
+  text-decoration:none;
+}

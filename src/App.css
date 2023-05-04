@@ -1,0 +1,19 @@
+*{
+  background-color:#e3e7df;
+  font-family:Comfortaa;
+  
+}
+main {
+  text-align: center;
+  vertical-align: center;
+  line-height: 100vh;
+}
+.left{
+  float:left;
+  width:60%;
+}
+.right{
+  float:right;
+  width:40%;
+}
+

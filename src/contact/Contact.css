@@ -1,0 +1,251 @@
+.contactMain{
+  width:100%;
+ // height:80vh;
+  //background:black;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+.contactMainContainer{
+  
+  width:50%;
+  height:40%vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  //position:translate(-50%,-50%);
+  margin:auto;
+  background:transparent;
+}
+.contactContainer{
+  padding-top:2rem;
+  padding-bottom:2rem;
+  margin-top:none;
+  //border-left:5px solid black;
+  //border-right:5px solid black;
+ // background:black;
+  //border-radius:7%;
+  box-shadow:2px 2px 5px 5px #b7aeae;
+  
+}
+.contactContainer input{
+  margin-bottom:1.2rem;
+  height:2.5rem;
+  width:15rem;
+  font-size:1rem;
+  padding-right:auto;
+  text-align:center;
+  border:none;
+  border-radius:1rem;
+  background:black;
+  color:white;
+  transition:1s ease;
+  box-shadow:1px 3px 3px 2px #b7aeae;
+  opacity:1;
+}
+.contactContainer input:hover{
+  transform:scale(1.1);
+}
+.contactContainer form{
+  width:auto;
+  background:transparent;
+}
+.contactContainer textarea{
+  width:80%;
+  height:5rem;
+  font-size:1rem;
+  margin-bottom:1.1rem;
+  overflow-x:hidden;
+  margin-left:1rem;
+  margin-right:1rem;
+  border:none;
+  border-radius:1rem;
+  padding-left:2rem;
+  padding-top:1rem;
+  background:black;
+  resize:none;
+  color:white;
+  box-shadow:2px 2px 5px 5px #b7aeae;
+  transition:.7s ease-in-out;
+  opacity:.6;
+}
+.contactContainer h1{
+   //animation:typing 3.5s steps(22,end),fade 1s infinite;
+  //border-right:3px solid red;
+  white-space:nowrap;
+ // overflow:hidden;
+  width:52%;
+  margin-left:9.5rem;
+}
+@keyframes typing{
+  from{
+    width:0;
+  }
+  to{
+    width:52%
+  }
+}
+@keyframes fade{
+  from{
+    border-color:transparent;
+  }
+  to{
+    border-color: red;
+  }
+}
+
+.contactContainer form h1{
+  color:black;
+}
+.contactContainer input:not([type='submit']){
+  margin-bottom:1.2rem;
+  height:2.5rem;
+  width:25rem;
+  font-size:1rem;
+  padding-right:auto;
+  text-align:center;
+  border:none;
+  border-radius:1rem;
+  background:black;
+  color:white;
+  transition:1s ease;
+  box-shadow:1px 3px 3px 2px #b7aeae;
+  opacity:.6;
+}
+.contactContainer span{
+  color:red;
+}
+.contactContainer textarea:hover{
+  transform:scale(1.1);
+}
+.emailNo {
+  display:none;
+}
+.emailTick{
+  animation:disappear 3s;
+}
+@keyframes disappear{
+  0%{
+    display:inline;
+  }
+  100%{
+  display:none;
+  }
+}
+@media (max-width:420px){
+  .contactMainContainer{
+    width:auto;
+    margin-bottom:2rem;
+  }
+  .contactContainer{
+    margin-top:4rem;
+    margin-bottom:3rem;
+  }
+  .contactContainer h1{
+    margin-left:2rem;
+    margin-right:.5rem;
+    padding:none;
+    font-size:1.6rem;
+    width:80%;
+    transition:none;
+    text-align:center;
+  }
+  .contactContainer input:not([type='submit']){
+  width:60%;
+  }
+  .contactContainer textarea{
+    width:70%;
+  }
+}
+ .floatingDivHome{
+  visibility:hidden;
+}
+.floatingHome{
+  background:white;
+  width:3rem;
+  height:3rem;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  box-shadow:1px 1px 6px 1px black;
+  border-radius:50%;
+  position:absolute;
+  top:6rem;
+  left:1.5rem;
+  transition:2s ease-in-out;
+  animation:big 1s infinite;
+  visibility:hidden;
+}
+@keyframes big{
+  from{
+    transform:scale(1)
+  }
+  to{
+    transform:scale(1.1)
+  }
+}
+
+@media (max-width:420px){
+  .floatingHome{
+    visibility:visible;
+  }
+} 
+@media (max-width:1200px) and (min-width:420px){
+  .contactMainContainer{
+    width:auto;
+    margin-bottom:2rem;
+  }
+  .contactContainer{
+    margin-top:4rem;
+    margin-bottom:3rem;
+  }
+  .contactContainer h1{
+    margin:auto;
+    padding:none;
+    font-size:1.6rem;
+    width:80%;
+    transition:none;
+    text-align:center;
+  }
+  .contactContainer input:not([type='submit']){
+  width:60%;
+  }
+  .contactContainer textarea{
+    width:70%;
+  }
+}
+@media (min-width:1200px){
+  .contactContainer h1{
+    margin:auto;
+    padding-bottom:1rem;
+  }
+}
+@media (max-width:1200px) and (min-width:420px){
+  .contactContainer h1{
+    margin:auto;
+    padding-bottom:1rem;
+  }
+}
+@media (min-width:1200px){
+  .contactContainer input{
+    display:inline-block;
+  }
+}
+@media (min-width:1200px){
+  .contactMain{
+    height:83vh;
+  }
+  .contactMainContainer{
+    margin:auto;
+  }
+  .contactContainer{
+    margin:auto;
+  }
+}
+@media (min-width:1600px){
+  .contactContainer input:not([type='Submit']){
+    width:60%;
+  }
+}

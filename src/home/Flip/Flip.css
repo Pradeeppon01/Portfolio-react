@@ -1,0 +1,67 @@
+.flipContainer{
+width:100%;
+  height:15rem;
+  padding:2rem auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:3rem;
+  cursor:pointer;
+  margin-top:2rem;
+}
+.flipCard{
+  z-index:0;
+  position:relative;
+  width:10rem;
+  height:15rem;
+  padding:2rem auto;
+  transform-style:preserve-3d;
+  transition:all 10s ease;
+  animation:flip 7s infinite;
+}
+/* .flipCard:hover{
+  transform:rotateY(180deg);
+} */
+@keyframes flip{
+  from{
+    tranform:rotateY(0);
+  }
+  to{
+    transform:rotateY(180deg);
+    }
+}
+.flipCard h2{
+  background:transparent;
+  padding:1rem;
+}
+.flipBack p{
+  padding:1rem;
+  word-wrap:break-word;
+}
+.flipFront{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:transparent;
+  backface-visibility:hidden;
+  box-shadow:1px 1px 7px 9px #d7b7b7;
+  border:3px solid black; 
+}
+.flipBack{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:transparent;
+  backface-visibility:hidden;
+  border-radius:6%;
+  transform:rotateY(180deg);
+  border-top-right-radius:60%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.flipBack p{
+ border:3px solid black; 
+  width:inherit;
+    box-shadow:1px 1px 7px 9px #d7b7b7;
+}

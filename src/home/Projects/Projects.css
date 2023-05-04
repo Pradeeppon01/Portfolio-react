@@ -1,0 +1,111 @@
+.projectsContainer{
+  display:flex;
+  justify-content:space-around;
+  gap:2rem;
+  background-color:black;
+  border-top-left-radius:3rem;
+  border-bottom-right-radius:3rem;
+  animation:swipe ease 1s;
+}
+@keyframes swipe{
+  0%{
+    transform:translateX(-100%);
+  }
+  100%{
+    tranform:translateX(0);
+  }
+}
+.projectsTitle{
+  margin-left:2rem;
+  font-weight:600;
+  animation:swipeRight ease 1s;
+}
+@keyframes swipeRight{
+  0%{
+    transform:translateX(100%);
+  }
+  100%{
+    tranform:translateX(0);
+  }
+}
+
+.project1Container{
+  width:10rem;
+  height:10rem;
+  background-color:e3e7df;
+  border-radius:.5rem;
+  color:#e3e7df;
+  margin-top:2rem;
+  margin-bottom:2rem;
+  display:flex;
+align-items:center;
+justify-content:center;
+    transform:2s ease-in-out;
+}
+.project2Container{
+  width:10rem;
+  height:10rem;
+  background-color:e3e7df;
+  border-radius:.5rem;
+  color:#e3e7df;
+  margin-top:2rem;
+  margin-bottom:2rem;
+  display:flex;
+ align-items:center;
+justify-content:center;
+    transform:2s ease-in-out;
+}
+.project3Container{
+  width:10rem;
+  height:10rem;
+  background-color:e3e7df;
+  border-radius:.5rem;
+  color:#e3e7df;
+  margin-top:2rem;
+  margin-bottom:2rem;
+  display:flex;
+align-items:center;
+justify-content:center;
+  transform:2s ease-in-out;
+}
+.projectsContainer h2{
+  color:black;
+  font-size:1.1rem;
+  width:auto;
+}
+.project1Container:hover{
+  transform:scale(1.1);
+}
+.project2Container:hover{
+  transform:scale(1.1);
+}
+.project3Container:hover{
+  transform:scale(1.1);
+}
+@media (max-width:420px){
+  .projectsContainer{
+    flex-direction:column;
+    border-top-left-radius:6rem;
+  border-bottom-right-radius:6rem;
+    padding-top:2rem;
+  }
+  .project1Container,.project2Container,.project3Container{
+  margin-top:0rem;
+    margin-left:auto;
+    margin-right:auto;
+    gap:0rem; 
+  }
+}
+@media (max-width:700px) and (min-width:420px){
+  .project1Container,.project2Container,.project3Container{
+  width:8rem;
+  height:8rem;
+    text-align:center;
+  }
+  .project1Container{
+    margin-left:2rem;
+  }
+  .project3Container{
+    margin-right:2rem;
+  }
+}

@@ -1,0 +1,54 @@
+.aboutContainer{
+  background-color:black;
+  padding:2rem auto;
+  width:100%;
+  border-top-left-radius:70%;
+  border-top-right-radius:150%;
+  height:auto;
+}
+.aboutPara{
+  padding-top:6rem;
+  padding-bottom:2rem;
+  margin:auto;
+  width:70%;
+  font-size:1.2rem;
+  position:relative;
+  right:0;
+  color:#e3e7df;
+  background:transparent;
+  transition:.5s ease-in-out;
+  animation:opace;
+  opacity:.8;
+  cursor:pointer;
+  animation:jump 4s linear infinite;
+  transition:1s;
+}
+.aboutPara:hover{
+  opacity:1
+}
+@keyframes jump{
+  from{
+    transform:translateY(-2%)
+  }
+  to{
+    transform:translateY(2%)
+  }
+}
+.aboutPara p,h1,h3{
+  background:transparent;
+}
+@media (max-width:420px){
+  .aboutContainer{
+     border-top-left-radius:33%;
+  border-top-right-radius:56%;
+  }
+  .aboutContainer .aboutPara h3{
+    font-size:1rem;
+  }
+}
+@media (max-width:1200px)and (min-width:420px){
+  .aboutContainer{
+    border-top-left-radius:33%;
+  border-top-right-radius:50%;
+  }
+}
